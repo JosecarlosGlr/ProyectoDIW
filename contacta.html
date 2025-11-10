@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contacta</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+<!-- Favicon estándar -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
+
+<!-- Para pantallas Retina (Apple y Android) -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/logo.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/logo.png">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="Logo">
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="sobremi.html">Sobre mi</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="contacta.html">Contacta</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>
+
+  <main class="main">
+
+
+<!-- Contact Section -->
+<section id="about" class="about section">
+
+  <form action="./forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" class="form-control" name="email" placeholder="Tu correo electrónico" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="tel" class="form-control" name="phone" placeholder="Teléfono (opcional)">
+      </div>
+
+      <div class="col-md-6">
+        <select name="contact_preference" class="form-select" required>
+          <option value="">Preferencia de contacto</option>
+          <option value="email">Correo electrónico</option>
+          <option value="phone">Teléfono</option>
+          <option value="whatsapp">WhatsApp</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <select name="goal" class="form-select" required>
+          <option value="">Objetivo principal</option>
+          <option value="perder_peso">Perder peso</option>
+          <option value="ganar_musculo">Ganar masa muscular</option>
+          <option value="mantenerme">Mantenerme en forma</option>
+          <option value="rendimiento">Mejorar rendimiento deportivo</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <select name="activity_level" class="form-select" required>
+          <option value="">Nivel de actividad física</option>
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+      </div>
+
+      <div class="col-md-12">
+        <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+      </div>
+
+      <div class="col-md-12">
+        <textarea class="form-control" name="message" rows="6" placeholder="Escribe tu mensaje o consulta aquí..." required></textarea>
+      </div>
+
+      <div class="col-md-12 text-center">
+        <div class="loading">Cargando</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+
+        <button class="btn" type="submit">Enviar mensaje</button>
+      </div>
+
+    </div>
+  </form><!-- End Contact Form -->
+
+</section><!-- /Contact Section -->
+
+
+  </main>
+
+<footer id="footer" class="footer accent-background">
+  <div class="container">
+
+    <div class="row text-center text-md-start">
+      <!-- Columna izquierda: Contacto -->
+      <div class="col-md-4 mb-4 mb-md-0 footer-contact">
+        <h5 class="footer-title">Contacto</h5>
+        <p>📞 +34 658 343 117</p>
+        <p>✉️ mariocoach71@gmail.com</p>
+        <p>🏠 Herencia, Ciudad Real</p>
+      </div>
+
+      <!-- Columna central: Consejos -->
+      <div class="col-md-4 mb-4 mb-md-0 footer-tips text-center">
+        <h5 class="footer-title">Consejos rápidos</h5>
+        <ul class="list-unstyled">
+          <li>🥦 Come natural, evita ultraprocesados</li>
+          <li>💧 Hidrátate antes y después del ejercicio</li>
+          <li>🏋️‍♀️ Entrena con constancia</li>
+          <li>😴 El descanso también es progreso</li>
+        </ul>
+      </div>
+
+      <!-- Columna derecha: Redes -->
+      <div class="col-md-4 footer-social text-center text-md-end">
+        <h5 class="footer-title">Sígueme</h5>
+        <div class="social-links d-flex justify-content-center justify-content-md-end mt-2">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/_coach__mario_/"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-3">
+
+    <!-- Parte inferior: Derechos -->
+    <div class="text-center mt-2">
+      <p class="copyright">
+        © <strong class="sitename">MarioCoach</strong> | Todos los derechos reservados
+      </p>
+      <p class="credits">
+        Designed by <a href="https://github.com/JosecarlosGlr"> JoseCarlosGlr</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
