@@ -496,6 +496,11 @@ h6 {
   color: #ffffff;
 }
 
+.footer-title{
+  color: #ffffff;
+  
+}
+
 .footer-tips ul {
   list-style: none;
   padding: 0;
@@ -1740,7 +1745,6 @@ section,
 
 .faq-title {
   text-align: center;
-  color: #265c0f;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 40px;
