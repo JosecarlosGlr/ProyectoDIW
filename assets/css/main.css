@@ -53,13 +53,14 @@
 }
 
 .accent-background {
-  --background-color: #407723
+  --background-color: #407723;
   --default-color: #ffffff;
   --heading-color: #407723;
   --accent-color: #ffffff;
   --surface-color: #3393ff;
   --contrast-color: #ffffff;
 }
+
 
 /* Smooth scroll */
 :root {
@@ -1104,7 +1105,7 @@ section,
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   padding-right: 50px;
 }
 
